@@ -1,0 +1,236 @@
+[
+  {
+    "_id": "642c155b2c4774f05c36eeaa",
+    "name": "Chocolate Lava Cake",
+    "description": "Rich and gooey chocolate cake with a molten chocolate center, served with vanilla ice cream.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 8.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Iced Caramel Macchiato",
+    "description": "Chilled espresso mixed with milk and topped with a caramel drizzle.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 4.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7c",
+    "name": "Strawberry Cheesecake",
+    "description": "Creamy cheesecake topped with fresh strawberries and a strawberry glaze.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 7.0,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee88",
+    "name": "Classic Tiramisu",
+    "description": "Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 6.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7a",
+    "name": "Lemon Meringue Pie",
+    "description": "Tangy lemon filling topped with fluffy meringue, served on a buttery crust.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 6.0,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee8c",
+    "name": "Blueberry Muffin",
+    "description": "Freshly baked muffin bursting with blueberries and a hint of lemon zest.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "pastry",
+    "price": 3.0,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee94",
+    "name": "Chocolate Croissant",
+    "description": "Flaky croissant filled with rich dark chocolate.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "pastry",
+    "price": 3.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee9e",
+    "name": "Vanilla Latte",
+    "description": "Smooth espresso combined with steamed milk and a hint of vanilla.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 4.0,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea6",
+    "name": "Red Velvet Cake",
+    "description": "Moist red velvet cake layered with cream cheese frosting.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 7.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Cinnamon Roll",
+    "description": "Warm cinnamon roll topped with cream cheese icing.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "pastry",
+    "price": 4.0,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee89",
+    "name": "Classic Brownie",
+    "description": "Fudgy chocolate brownie with a crispy top.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 2.5,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee8a",
+    "name": "Matcha Latte",
+    "description": "Creamy latte made with high-quality matcha green tea powder.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 4.5,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee96",
+    "name": "Pistachio Macaron",
+    "description": "Delicate macaron with a rich pistachio filling.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 1.5,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee81",
+    "name": "Caramel Frappe",
+    "description": "Blended coffee drink with caramel syrup and whipped cream.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 4.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee84",
+    "name": "Blueberry Scone",
+    "description": "Tender scone filled with fresh blueberries and a hint of lemon.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "pastry",
+    "price": 3.0,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea4",
+    "name": "Pumpkin Spice Latte",
+    "description": "Seasonal favorite with espresso, steamed milk, pumpkin spice syrup, and whipped cream.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 5.0,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea5",
+    "name": "Apple Pie",
+    "description": "Classic apple pie with a flaky crust and spiced apple filling.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 6.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee87",
+    "name": "Mango Smoothie",
+    "description": "Refreshing smoothie made with fresh mangoes and a touch of honey.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 5.0,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee83",
+    "name": "Raspberry Tart",
+    "description": "Crispy tart shell filled with vanilla custard and topped with fresh raspberries.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 5.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7f",
+    "name": "Churros with Chocolate Sauce",
+    "description": "Fried dough pastries dusted with cinnamon sugar, served with a side of chocolate sauce.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 4.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eea8",
+    "name": "Banana Bread",
+    "description": "Moist banana bread with a hint of cinnamon and walnuts.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "pastry",
+    "price": 3.5,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeba",
+    "name": "Hazelnut Latte",
+    "description": "Rich espresso with steamed milk and hazelnut syrup, topped with foam.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 4.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee80",
+    "name": "Peach Cobbler",
+    "description": "Warm peach cobbler with a buttery, flaky crust and served with vanilla ice cream.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 5.5,
+    "popularity": "unpopular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7e",
+    "name": "Espresso",
+    "description": "Strong and bold espresso shot, perfect for a quick caffeine boost.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "beverage",
+    "price": 2.0,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee8b",
+    "name": "Vanilla Cupcake",
+    "description": "Fluffy vanilla cupcake topped with creamy vanilla buttercream.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "dessert",
+    "price": 2.5,
+    "popularity": "popular"
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee97",
+    "name": "Chocolate Chip Cookie",
+    "description": "Classic chocolate chip cookie with a soft and chewy center.",
+    "image": "https://i.ibb.co/B2hnjnR/amirali-mirhashemian-Efk-Mk-UXs0f-U-unsplash.jpg",
+    "category": "pastry",
+    "price": 1.5,
+    "popularity": "unpopular"
+  }
+]

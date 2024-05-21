@@ -1,0 +1,6 @@
+.featured-item{
+    background-image:linear-gradient(0deg, rgba(21, 21, 21, 0.1) 90%, rgba(21, 21, 21, 0.1) 100%), url('../../../assets/categories/featured.jpg');
+    background-position:    right  ;
+    
+    
+}

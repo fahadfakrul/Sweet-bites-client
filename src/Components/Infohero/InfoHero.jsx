@@ -4,10 +4,10 @@ const InfoHero = () => {
   return (
     <div>
       <div
-        className="hero h-[500px] object-cover my-24"
+        className="hero h-[550px] bg-fixed object-cover my-24"
         style={{
           backgroundImage:
-            `url(${infobg})`,
+            `url(${infobg})`,backgroundPosition:'top '
         }}
       >
         <div className="hero-overlay rounded-sm bg-opacity-60"></div>
