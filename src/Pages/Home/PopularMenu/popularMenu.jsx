@@ -18,7 +18,7 @@ const PopularMenu = () => {
         }
       </div>
       <div className="flex justify-center">
-      <button className="btn btn-ghost font-cormorant font-bold text-xl shadow-xl border-b-4 border-b-[#FB6F92] mt-8">View Full Menu</button>
+      <button className="btn btn-ghost font-cormorant font-bold text-xl shadow-xl border-b-4 border-b-[#FB6F92] mt-8 hover:text-white hover:bg-[#3A86FF]">View Full Menu</button>
       </div>
     </section>
   );
