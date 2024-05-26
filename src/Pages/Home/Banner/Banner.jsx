@@ -17,7 +17,7 @@ const Banner = () => {
       transitionTime={1000}
     >
       <div>
-        <img className="rounded-sm object-cover " src={img1} />
+        <img className="rounded-sm object-cover  image" src={img1} />
       </div>
       <div>
         <img className="rounded-sm object-cover" src={img2} />
