@@ -9,12 +9,14 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 const Login = () => {
-  const location= useLocation()
-  const navigate = useNavigate()
+  const location = useLocation();
+  const navigate = useNavigate();
   const [disabled, setDisabled] = useState(true);
 
-  const from = location.state?.from?.pathname || "/"
+  const from = location.state?.from?.pathname || "/";
 
   const { signIn } = useContext(AuthContext);
   useEffect(() => {
@@ -37,17 +39,17 @@ const Login = () => {
             animate__animated
             animate__fadeInUp
             animate__faster
-          `
+          `,
         },
         hideClass: {
           popup: `
             animate__animated
             animate__fadeOutDown
             animate__faster
-          `
-        }
+          `,
+        },
       });
-      navigate(from, {replace: true});
+      navigate(from, { replace: true });
     });
   };
   const handleValidateCaptcha = (e) => {
@@ -115,8 +117,8 @@ const Login = () => {
                   className="input input-bordered"
                   required
                 />
-                
               </div>
+
               <div className="form-control mt-6">
                 <input
                   className="btn btn-ghost font-cormorant font-bold text-white text-xl shadow-xl bg-[#3A86FF]  hover:text-black hover:bg-[#ffc8dd]"
@@ -132,6 +134,11 @@ const Login = () => {
                 </Link>
               </div>
             </form>
+            <div className="p-10">
+              <p className="text-center text-xs ">Or Login With</p>
+
+              <SocialLogin></SocialLogin>
+            </div>
           </div>
         </div>
       </div>

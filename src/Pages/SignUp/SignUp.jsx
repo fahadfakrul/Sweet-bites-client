@@ -5,43 +5,54 @@ import { Helmet } from "react-helmet-async";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+
 
 const SignUp = () => {
+  const axiosPublic = useAxiosPublic();
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
-  const {createUser, updateUserProfile} =  useContext(AuthContext)
-  const navigate = useNavigate()
+  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    createUser(data.email, data.password)
-    .then(result => {
-        const loggedUser = result.user;
-        console.log(loggedUser);
-        updateUserProfile(  data.name,  data.photoURL )
+    createUser(data.email, data.password).then((result) => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+      updateUserProfile(data.name, data.photoURL)
         .then(() => {
-       console.log('user profile updated');
-       reset();
-       Swal.fire({
-        
-        icon: "success",
-        title: "User created successfully",
-        showConfirmButton: false,
-        timer: 1500
-      });
-      navigate('/')
+          const userInfo={
+            name:data.name,
+            email:data.email,
+            // photoURL:data.photoURL
+          }
+          axiosPublic.post('/users', userInfo)
+          .then(res => {
+            if(res.data.insertedId){
+              reset();
+              Swal.fire({
+                icon: "success",
+                title: "User created successfully",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+              navigate("/");
+            }
+          })
+          
         })
-        .catch(err => console.log(err))
-    })
-    
-  }
+        .catch((err) => console.log(err));
+    });
+  };
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Sweet Bites | SignUp</title>
       </Helmet>
       <div className="hero  min-h-screen  lg:p-4 bg-[#ffc8dd]">
@@ -74,7 +85,6 @@ const SignUp = () => {
                 <input
                   type="text"
                   placeholder="Photo URL"
-                 
                   className="input input-bordered"
                   {...register("photoURL", { required: true })}
                 />
@@ -135,14 +145,17 @@ const SignUp = () => {
                   value="Sign Up"
                   // disabled={disabled}
                 />
-
-                <Link to="/login">
+                  <Link to="/login">
                   <p className="text-center font-semibold hover:underline mt-5 text-xs">
-                    Already have account? Sign In
+                    Already have account? LogIn
                   </p>
                 </Link>
               </div>
             </form>
+            <div className="p-10"><p className="text-center text-xs ">Or SignUp With</p>
+                 <SocialLogin></SocialLogin>
+
+               </div>
           </div>
         </div>
       </div>
