@@ -13,7 +13,7 @@ const Featured = () => {
                     <p className="text-xl font-cormorant font-bold">Dec 25, 2024</p>
                     <p className="text-xl uppercase font-cormorant font-bold">Where can i get some?</p>
                     <p className="text-xl font-cormorant font-bold ">Our Holiday Special Cherry Pie is a festive treat bursting with juicy cherries and wrapped in a flaky, golden crust. Perfectly spiced with a hint of cinnamon, this pie is a delightful way to celebrate the season. Indulge in the warmth and cheer of our handcrafted holiday delight!</p>
-                    <button className="btn btn-ghost font-cormorant font-bold text-xl shadow-xl border-b-4 border-b-[#FB6F92]">Read More</button>
+                    <button className="btn btn-ghost font-cormorant font-bold text-xl shadow-xl border-b-4 border-b-[#FB6F92] mt-8 hover:text-white hover:bg-[#3A86FF]">Read More</button>
                 </div>
             </div>
         </div>

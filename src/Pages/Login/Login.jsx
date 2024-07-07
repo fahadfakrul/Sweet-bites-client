@@ -66,8 +66,8 @@ const Login = () => {
       <Helmet>
         <title>Sweet Bites | LogIn</title>
       </Helmet>
-      <div className="hero  min-h-screen  lg:p-4 bg-[#ffc8dd]">
-        <div className="hero-content border rounded-md  bg-[#edf6f9] lg:p-8 shadow-xl flex-col lg:flex-row ">
+      <div className="hero  min-h-screen  lg:p-4 bg-gradient-to-r from-[#FB6F92] to-blue-500 ">
+        <div className="hero-content border rounded-md  bg-[#edf6f9] lg:px-8 shadow-xl flex-col lg:flex-row ">
           <div className="text-center md:w-1/2   lg:text-left">
             <img src={loginImg} alt="" className="w-full " />
           </div>
@@ -119,7 +119,7 @@ const Login = () => {
                 />
               </div>
 
-              <div className="form-control mt-6">
+              <div className="form-control mt-3">
                 <input
                   className="btn btn-ghost font-cormorant font-bold text-white text-xl shadow-xl bg-[#3A86FF]  hover:text-black hover:bg-[#ffc8dd]"
                   type="submit"
@@ -133,12 +133,13 @@ const Login = () => {
                   </p>
                 </Link>
               </div>
-            </form>
-            <div className="p-10">
+              <div className="mt-3">
               <p className="text-center text-xs ">Or Login With</p>
 
               <SocialLogin></SocialLogin>
             </div>
+            </form>
+            
           </div>
         </div>
       </div>

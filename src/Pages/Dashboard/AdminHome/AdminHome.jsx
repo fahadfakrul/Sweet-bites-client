@@ -6,7 +6,7 @@ import { FaClipboardCheck, FaDollarSign, FaUsers, FaUtensils } from "react-icons
 const AdminHome = () => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
-  const { data: stats } = useQuery({
+  const { data: stats , isLoading} = useQuery({
     queryKey: ["admin-stats"],
     queryFn: async () => {
       const res = await axiosSecure.get('/admin-stats');
@@ -14,12 +14,16 @@ const AdminHome = () => {
       
     },
   });
+
+  if (isLoading){
+    return <progress className="progress w-56 text-center"></progress>
+}
   return (
     <div>
       <h2 className="text-3xl mb-5">
         <span>Hi, Welcome</span> {user?.displayName ? user.displayName : "Back"}
       </h2>
-      <div className="stats shadow gap-16">
+      <div className="stats shadow gap-20">
         <div className="stat">
           <div className="stat-figure text-secondary">
             <FaDollarSign className="text-4xl"></FaDollarSign>

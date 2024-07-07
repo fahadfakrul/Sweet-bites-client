@@ -25,14 +25,7 @@ const NavBar = () => {
       <li>
         <Link to="/order/cakes">Order Now</Link>
       </li>
-      <li>
-        <Link to="/dashboard/cart">
-          <button className="btn ">
-            <FaShoppingCart></FaShoppingCart>
-            <div className="badge">+{cart.length}</div>
-          </button>
-        </Link>
-      </li>
+      
       {
         user && isAdmin && <li>
           <Link to="/dashboard/adminHome">Dashboard</Link>
@@ -42,6 +35,18 @@ const NavBar = () => {
         user && !isAdmin && <li>
           <Link to="/dashboard/userHome">Dashboard</Link>
         </li>
+        
+      }
+      {
+        user && !isAdmin && <li>
+        <Link to="/dashboard/cart">
+          <button className="btn ">
+            <FaShoppingCart></FaShoppingCart>
+            <div className="badge">+{cart.length}</div>
+          </button>
+        </Link>
+      </li>
+        
       }
      
       {user ? (

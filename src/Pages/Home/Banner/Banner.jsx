@@ -7,6 +7,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Banner = () => {
+  const carouselStyle = {
+    height: '550px', 
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  };
+  const imageStyle = {
+    maxHeight: '100%',
+    objectFit: 'cover'
+  };
   return (
     <Carousel
       autoPlay={true}
@@ -16,20 +26,20 @@ const Banner = () => {
       showStatus={false}
       transitionTime={1000}
     >
-      <div>
-        <img className="rounded-sm object-cover  image" src={img1} />
+      <div style={carouselStyle}>
+        <img className="rounded-sm object-cover  image" src={img1} style={imageStyle}/>
       </div>
-      <div>
-        <img className="rounded-sm object-cover" src={img2} />
+      <div style={carouselStyle}>
+        <img className="rounded-sm object-cover" src={img2} style={imageStyle} />
       </div>
-      <div>
-        <img className="rounded-sm object-cover" src={img3} />
+      <div style={carouselStyle}>
+        <img className="rounded-sm object-cover" src={img3} style={imageStyle}/>
       </div>
-      <div>
-        <img className="rounded-sm object-cover" src={img4} />
+      <div style={carouselStyle}>
+        <img className="rounded-sm object-cover" src={img4} style={imageStyle}/>
       </div>
-      <div>
-        <img className="rounded-sm object-cover" src={img5} />
+      <div style={carouselStyle}>
+        <img className="rounded-sm object-cover" src={img5} style={imageStyle}/>
       </div>
     </Carousel>
   );

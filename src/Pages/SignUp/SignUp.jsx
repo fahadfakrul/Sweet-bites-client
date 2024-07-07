@@ -8,7 +8,6 @@ import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
-
 const SignUp = () => {
   const axiosPublic = useAxiosPublic();
   const {
@@ -26,14 +25,13 @@ const SignUp = () => {
       console.log(loggedUser);
       updateUserProfile(data.name, data.photoURL)
         .then(() => {
-          const userInfo={
-            name:data.name,
-            email:data.email,
+          const userInfo = {
+            name: data.name,
+            email: data.email,
             // photoURL:data.photoURL
-          }
-          axiosPublic.post('/users', userInfo)
-          .then(res => {
-            if(res.data.insertedId){
+          };
+          axiosPublic.post("/users", userInfo).then((res) => {
+            if (res.data.insertedId) {
               reset();
               Swal.fire({
                 icon: "success",
@@ -43,8 +41,7 @@ const SignUp = () => {
               });
               navigate("/");
             }
-          })
-          
+          });
         })
         .catch((err) => console.log(err));
     });
@@ -55,8 +52,8 @@ const SignUp = () => {
       <Helmet>
         <title>Sweet Bites | SignUp</title>
       </Helmet>
-      <div className="hero  min-h-screen  lg:p-4 bg-[#ffc8dd]">
-        <div className="hero-content border rounded-md  bg-[#edf6f9] lg:p-8 shadow-xl flex-col lg:flex-row-reverse ">
+      <div className="hero  min-h-screen  lg:p-4 bg-gradient-to-r from-blue-500 to-[#FB6F92] ">
+        <div className="hero-content border rounded-md  bg-[#edf6f9] lg:px-8 shadow-xl flex-col lg:flex-row-reverse ">
           <div className="text-center md:w-1/2   lg:text-left">
             <img src={signupImg} alt="" className="w-full " />
           </div>
@@ -138,24 +135,28 @@ const SignUp = () => {
                 )}
               </div>
 
-              <div className="form-control mt-6">
+              <div className="form-control mt-3">
                 <input
                   className="btn btn-ghost font-cormorant font-bold text-white text-xl shadow-xl bg-[#3A86FF]  hover:text-black hover:bg-[#ffc8dd]"
                   type="submit"
                   value="Sign Up"
                   // disabled={disabled}
                 />
-                  <Link to="/login">
+                <Link to="/login">
                   <p className="text-center font-semibold hover:underline mt-5 text-xs">
                     Already have account? LogIn
                   </p>
                 </Link>
               </div>
+              <div
+              className=" mt-5
+"
+            >
+              <p className="text-center text-xs ">Or SignUp With</p>
+              <SocialLogin></SocialLogin>
+            </div>
             </form>
-            <div className="p-10"><p className="text-center text-xs ">Or SignUp With</p>
-                 <SocialLogin></SocialLogin>
-
-               </div>
+            
           </div>
         </div>
       </div>
